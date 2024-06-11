@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+    <script src="../scripts/navbar.js"></script>
+
+    <section class="header">
+        <h1>PAYMENT DETAILS</h1>
+        <p>Select one of the payment options below to finalize your purchase</p>
+
+        <!-- <form>
+            <label>1: <input type=radio class="toggleTab" name="userType" value="1" checked></label>
+            <br>
+            <label>2: <input type=radio class="toggleTab" name="userType" value="2" /></label>
+            <br>
+            <label>3: <input type=radio class="toggleTab" name="userType" value="3" /></label>
+            <br>
+            <div class="tab" tabname=1>
+                <input placeholder="UserType 1 Input">
+            </div>
+            <div class="tab d-none" tabname=2>
+                <input placeholder="UserType 2 Input">
+            </div>
+            <div class="tab d-none" tabname=3>
+                <input placeholder="UserType 3 Input">
+            </div>
+
+        </form> -->
+
+        <div class="container">
+            <div class="radio-tile-group">
+                <div class="input-container">
+                    <input id="walk" class="radio-button toggleTab" type="radio" value="1" name="userType" />
+                    <div class="radio-tile">
+                        <div class="icon walk-icon">
+                            <img src="../images/ipay.png" alt="iPay Logo">
+                        </div>
+                        <label for="walk" class="radio-tile-label">iPay</label>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <input id="bike" class="radio-button toggleTab" type="radio" value="2" name="userType" />
+                    <div class="radio-tile">
+                        <div class="icon bike-icon">
+                            <img src="../images/sasapay.png" alt="SasaPay Logo">
+                        </div>
+                        <label for="bike" class="radio-tile-label">Sasapay</label>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <input id="drive" class="radio-button toggleTab" type="radio" value="3" name="userType" />
+                    <div class="radio-tile">
+                        <div class="icon car-icon">
+                            <img src="../images/pesapal.png" alt="Pesapal Logo">
+                        </div>
+                        <label for="drive" class="radio-tile-label">Pesapal</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payable-container">
+            <p>Total Payable</p>
+            <p id="total-payable"></p>
+        </div>
+
+    </section>
+    <section class="checkout-bottom">
+        <div class="option-container tab d-none" tabname=1>
+            <p>You will be redirected to the iPay dashboard to complete your payment</p>
+
+            <button>Make Payment</button>
+        </div>
+
+        <div class="option-container tab d-none" tabname=2>
+            <p>You will be redirected to log in to your SasaPay account and complete the payment</p>
+
+            <button>Make Payment</button>
+        </div>
+
+        <div class="option-container tab d-none" tabname=3>
+            <p>You will be redirected to log in to your PesaPal account and complete the payment</p>
+
+            <button>Make Payment</button>
+        </div>
+
+        <!-- <div class="tab d-none" tabname=1>
+            <input placeholder="UserType 1 Input">
+        </div>
+        <div class="tab d-none" tabname=2>
+            <input placeholder="UserType 2 Input">
+        </div>
+        <div class="tab d-none" tabname=3>
+            <input placeholder="UserType 3 Input">
+        </div> -->
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

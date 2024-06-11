@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script src="../scripts/navbar.js"></script>
+
+    <section class="product-details">
+        <div class="prod-image">
+            <img id="product-image" alt="Product Image" class="product-image-detail">
+        </div>
+        <div class="prod-info">
+            <h1 id="product-title">Product Title</h1>
+            <span class="stock">In Stock</span>
+            <span class="make-call"><a href="tel:+254733555504">Give us a Call</a></span>
+            <p id="product-price" class="prod-price"></p>
+            <hr>
+            <p id="product-description" class="prod-description"></p>
+            <button onclick="goToCheckout()">Buy Now</button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
